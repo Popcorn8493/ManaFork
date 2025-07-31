@@ -40,7 +40,7 @@ First, set up a virtual environment to keep your project dependencies isolated.
 
 ### How to Use
 
-####  `convert_manabox_to_tcgplayer.py`
+####  `convert_manabox_tcgp.py`
 
 This script converts a CSV export from Manabox to a TCGplayer-compatible format.
 
@@ -54,7 +54,7 @@ This script converts a CSV export from Manabox to a TCGplayer-compatible format.
 2.  **Run the script:**
 
     ```bash
-    python convert_manabox_to_tcgplayer.py
+    python convert_manabox_tcgp.py
     ```
 
 3.  **Follow the prompts:**
@@ -65,21 +65,3 @@ This script converts a CSV export from Manabox to a TCGplayer-compatible format.
           * Press **N** to reject it and see the next suggestion.
           * Press **G** to give up on a card and move to the next.
       * The output will be saved as `tcgplayer_staged.csv` and any cards you gave up on will be in `tcgplayer_given_up.csv`.
-
-####  `update_tcgplayer_prices.py`
-
-This script updates the prices in your TCGplayer inventory CSV based on a variety of parameters that can be adjusted as needed, wanted, or desired. Always double check after running and before uploading for correct quantities, prices, etc.
-
-1.  **Run the script:**
-
-    ```bash
-    python update_tcgplayer_prices.py
-    ```
-
-2.  **Select your file:**
-
-      * A window will pop up asking you to select your TCGplayer inventory CSV.
-
-3.  **Get the output:**
-
-      * The script will create a new file named `Updated_TCGplayer_Inventory.csv` with the updated prices.
