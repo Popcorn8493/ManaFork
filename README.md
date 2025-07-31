@@ -1,4 +1,4 @@
-# MtG-Card-Tools
+# ManaFork
 
 These scripts help manage your Magic: The Gathering card inventory for TCGplayer if you are primarily a manabox scanner/user
 
