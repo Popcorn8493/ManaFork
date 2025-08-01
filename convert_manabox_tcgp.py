@@ -20,8 +20,6 @@ SET_ALIAS = {
 		"Universes Beyond: The Lord of the Rings: Tales of Middle-earth": "LTR",
 		"Commander: The Lord of the Rings: Tales of Middle-earth":        "LTC",
 		"the list":                                                       "The List",
-		"edge of eternities":                                             "eoe",
-		"EOE":                                                            "eoe"
 }
 
 # Condition format standardization
@@ -803,7 +801,7 @@ def build_standard_entry(ref_row, product_name_suffix, manabox_row, condition):
 			"Rarity":                ref_row.get("Rarity", ""),
 			"Condition":             condition,
 			"Add to Quantity":       int(manabox_row.get("Quantity", "1")),
-			"TCG Marketplace Price": manabox_row.get("Purchase price", "0.00")
+			"TCG Marketplace Price": get_market_price(manabox_row, ref_row)
 	}
 
 
